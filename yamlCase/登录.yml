@@ -1,0 +1,79 @@
+输入正确的账号密码登录:
+  url: https://mainto-app-1-0.local.hzmantu.com/user_auth/login/pass
+  phone: 13676561839
+  pass: 123456
+  brand: mainto_app
+  temp_token: ''
+  assert: true
+
+输入错误的账号(10位纯数字)登录:
+  url: https://mainto-app-1-0.local.hzmantu.com/user_auth/login/pass
+  phone: 1367656183
+  pass: 123456
+  brand: mainto_app
+  temp_token: ''
+  assert: false
+
+输入错误的账号(12位纯数字)登录:
+  url: https://mainto-app-1-0.local.hzmantu.com/user_auth/login/pass
+  phone: 136765618399
+  pass: 123456
+  brand: mainto_app
+  temp_token: ''
+  assert: false
+
+输入错误的密码登录:
+  url: https://mainto-app-1-0.local.hzmantu.com/user_auth/login/pass
+  phone: 13676561839
+  pass: 1234567
+  brand: mainto_app
+  temp_token: ''
+  assert: false
+
+输入空值登录:
+  url: https://mainto-app-1-0.local.hzmantu.com/user_auth/login/pass
+  phone: ''
+  pass: ''
+  brand: mainto_app
+  temp_token: ''
+  assert: false
+
+输入5位正确的密码登录:
+  url: https://mainto-app-1-0.local.hzmantu.com/user_auth/login/pass
+  phone: 13676561839
+  pass: 12345
+  brand: mainto_app
+  temp_token: ''
+  assert: false
+
+输入空账号登录:
+  url: https://mainto-app-1-0.local.hzmantu.com/user_auth/login/pass
+  phone: ''
+  pass: 123456
+  brand: mainto_app
+  temp_token: ''
+  assert: false
+
+输入空密码登录:
+  url: https://mainto-app-1-0.local.hzmantu.com/user_auth/login/pass
+  phone: 13676561839
+  pass: ''
+  brand: mainto_app
+  temp_token:
+  assert: false
+
+传入的品牌为空:
+  url: https://mainto-app-1-0.local.hzmantu.com/user_auth/login/pass
+  phone: 13676561839
+  pass: 123456
+  brand: ''
+  temp_token: ''
+  assert: false
+
+传入错误的temp_token:
+  url: https://mainto-app-1-0.local.hzmantu.com/user_auth/login/pass
+  phone: 13676561839
+  pass: 123456
+  brand: mainto_app
+  temp_token: 12381iejk
+  assert: false

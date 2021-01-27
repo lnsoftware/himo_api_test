@@ -1,0 +1,21 @@
+url: https://mainto-app-1-0.local.hzmantu.com/project_mainto_app/user/preferentialCard/bind/v1
+
+#绑定未使用过的优惠券:
+#  preferentialCode: eMPnYp5d
+#  assert: true
+
+绑定已绑定过的优惠券:
+  preferentialCode: 4mTGqEbK
+  assert: false
+
+绑定不存在的优惠券:
+  preferentialCode: asdkasdkl
+  assert: false
+
+绑定已过期优惠券:
+  preferentialCode: UcfE72uv
+  assert: false
+
+绑定空值:
+  preferentialCode: ''
+  assert: false

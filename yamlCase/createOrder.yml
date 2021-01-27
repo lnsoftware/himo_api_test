@@ -1,0 +1,60 @@
+创建订单(输入错误的手机号):
+  url: "https://mainto-app-1-0.local.hzmantu.com/project_mainto_app/order/create/v1"
+  data: {
+    "userName": "xxx",
+    "userSex": "female",
+    "userBirthday": "1997-05-04",
+    "userPhone": "1234567890",
+    "reserveTime": "2020-03-20 20:30:00",
+    "storeId": 1004,
+    "from": "mobile",
+    "oriMoney": 129,
+    "detail": [
+    {
+      "product_id": 5499,
+      "people_num": 1,
+      "num": 1,
+      "styles": [],
+      "services": [
+      {
+        "id": 5501,
+        "people_num": 1,
+        "num": 1
+      }
+      ]
+    }
+    ],
+    "giftCardMoney": 129
+  }
+  assert: False
+
+
+创建订单:
+  url: "https://mainto-app-1-0.local.hzmantu.com/project_mainto_app/order/create/v1"
+  data: {
+    "userName": "xxx",
+    "userSex": "female",
+    "userBirthday": "1997-05-04",
+    "userPhone": "13676561839",
+    "reserveTime": "2020-04-20 20:30:00",
+    "storeId": 1004,
+    "from": "mobile",
+    "oriMoney": 129,
+    "detail": [
+    {
+      "product_id": 5499,
+      "people_num": 1,
+      "num": 1,
+      "styles": [],
+      "services": [
+      {
+        "id": 5501,
+        "people_num": 1,
+        "num": 1
+      }
+      ]
+    }
+    ],
+    "giftCardMoney": 129
+  }
+  assert: True

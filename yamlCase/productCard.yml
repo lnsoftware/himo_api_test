@@ -1,0 +1,17 @@
+url: https://mainto-app-1-0.local.hzmantu.com/project_mainto_app/user/productCard/bind/v1
+
+绑定已绑定过的优惠券:
+  code: 4mTGqEbK
+  assert: false
+
+绑定不存在的优惠券:
+  code: asdkasdkl
+  assert: false
+
+绑定已过期优惠券:
+  code: UcfE72uv
+  assert: false
+
+绑定空值:
+  code: ''
+  assert: false

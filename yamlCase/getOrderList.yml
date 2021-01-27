@@ -1,0 +1,8 @@
+获取订单列表:
+  url: 'https://mainto-app-1-0.local.hzmantu.com/project_mainto_app/order/list/v1'
+  data: {
+    "page": 1,
+    "pageSize": 50,
+    "status": "total"
+  }
+  assert: True
